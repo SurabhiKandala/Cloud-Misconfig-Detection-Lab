@@ -53,32 +53,38 @@ StorageBlobLogs
 | where OperationCount > 10
 ```
 
----
+## 🚨 **Alerting**
 
-##🚨 Alerting
-Created Microsoft Sentinel analytics rule
-Triggered alert based on detection logic
+Microsoft Sentinel analytics rule triggered an alert based on detection logic identifying suspicious high-volume blob access.
 
 ---
-##🕵️ Incident Investigation
-Identified source IP
-Analyzed access patterns
-Confirmed high-volume activity
+
+## 🕵️ **Incident Investigation**
+
+- Identified source IP address  
+- Analyzed access patterns  
+- Confirmed high-volume activity within a short time window  
 
 ---
-##🧠 MITRE ATT&CK Mapping
-Collection
-Exfiltration
+
+## 🧠 **MITRE ATT&CK Mapping**
+
+- **Collection**  
+- **Exfiltration**
 
 ---
-##🏆 Outcome
+
+## 🏆 **Outcome**
 
 Successfully demonstrated:
 
-Misconfiguration → Exploitation → Detection → Alert → Investigation
+**Misconfiguration → Exploitation → Detection → Alert → Investigation**
+
 ---
-##⚙️ Technologies Used
-Microsoft Azure
-Microsoft Sentinel
-Azure Monitor
-KQL (Kusto Query Language)
+
+## ⚙️ **Technologies Used**
+
+- Microsoft Azure  
+- Microsoft Sentinel  
+- Azure Monitor  
+- KQL (Kusto Query Language)  
