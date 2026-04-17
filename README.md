@@ -17,7 +17,7 @@ To detect unauthorized high-volume access to Azure Blob Storage caused by a misc
 - Enabled anonymous access on Azure Storage
 - Created publicly accessible blob container
 
-![Misconfiguration](screenshots/01-misconfiguration.png)
+![Misconfiguration](./screenshots/01-misconfiguration.jpeg)
 
 ---
 
@@ -26,7 +26,7 @@ To detect unauthorized high-volume access to Azure Blob Storage caused by a misc
 - Accessed blob files from external system
 - Performed repeated downloads and enumeration
 
-![Container](screenshots/02-container.png)
+![Container](./screenshots/02-container-public-access.jpeg)
 
 ---
 
@@ -35,11 +35,13 @@ To detect unauthorized high-volume access to Azure Blob Storage caused by a misc
 - Logs collected using Azure Monitor
 - Data available in `StorageBlobLogs`
 
-![Logs](screenshots/03-logs.png)
+![Logs](./screenshots/04-raw-log.jpeg)
 
 ---
 
 ## 🔍 Detection Logic
+
+![Detection](./screenshots/05-detection-query.jpeg)
 
 KQL query used to detect suspicious behavior:
 
@@ -64,6 +66,8 @@ Microsoft Sentinel analytics rule triggered an alert based on detection logic id
 - Identified source IP address  
 - Analyzed access patterns  
 - Confirmed high-volume activity within a short time window  
+
+![Incident](./screenshots/07-incident-triggered.jpeg)
 
 ---
 
